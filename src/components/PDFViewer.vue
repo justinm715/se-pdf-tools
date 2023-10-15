@@ -1,12 +1,29 @@
 <template>
   <div class="py-2 container">
     <input type="file" @change="loadPDF" />
-    <div ref="pdfContainer" class="pdf-container grid grid-cols-2 gap-0"></div>
+    <div ref="pdfContainer" class="pdf-container grid grid-cols-2 gap-0">
+      <div id="pdfPagesColumn"></div>
+      <div id="annotationsColumn">
+        <div
+          v-for="annotations in allAnnotations"
+          :key="annotations.pageNum"
+          class="annotation-container h-[80vh] overflow-y-scroll"
+        >
+          <div
+            v-for="annotation in annotations.data"
+            :key="annotation.id"
+            class="annotation-item text-xs"
+          >
+            Annotation: {{ annotation }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import * as pdfjsLib from "pdfjs-dist/build/pdf.js";
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   "../../node_modules/pdfjs-dist/build/pdf.worker.js";
@@ -15,7 +32,8 @@ export default {
   name: "PdfViewer",
   setup() {
     const pdfContainer = ref<HTMLDivElement | null>(null);
-    let pdf = null;
+
+    const allAnnotations = ref<Array<{ pageNum: number; data: any[] }>>([]);
 
     const loadPDF = (event: Event) => {
       const file = (event.target as HTMLInputElement)?.files?.[0];
@@ -23,14 +41,14 @@ export default {
         const reader = new FileReader();
         reader.onload = async (e) => {
           const typedArray = new Uint8Array(e.target?.result as ArrayBuffer);
-          pdf = await pdfjsLib.getDocument(typedArray).promise;
-          renderAllPages();
+          const pdf = await pdfjsLib.getDocument(typedArray).promise;
+          renderAllPages(pdf);
         };
         reader.readAsArrayBuffer(file);
       }
     };
 
-    const renderAllPages = async () => {
+    const renderAllPages = async (pdf: any) => {
       if (pdf && pdfContainer.value) {
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
@@ -41,14 +59,15 @@ export default {
           pageContainer.classList.add(
             "border-0",
             "border-slate-500",
-            "max-h-[80vh]",
+            "h-[80vh]",
             "overflow-auto",
           );
           const canvas = document.createElement("canvas");
           canvas.height = viewport.height;
           canvas.width = viewport.width;
           pageContainer.appendChild(canvas);
-          pdfContainer.value.appendChild(pageContainer);
+          const pdfPagesColumn = document.getElementById("pdfPagesColumn");
+          pdfPagesColumn.appendChild(pageContainer);
 
           const context = canvas.getContext("2d");
           const renderContext = {
@@ -56,32 +75,11 @@ export default {
             viewport: viewport,
           };
 
-          // Render the PDF page onto the canvas
-          await page.render(renderContext).promise;
+          await page.render(renderContext);
 
           // Get annotations for the page
           const annotations = await page.getAnnotations();
-
-          // Create a div for annotations
-          const annotationDiv = document.createElement("div");
-          annotationDiv.classList.add("border-0", "border-rose-500");
-          annotationDiv.classList.add(
-            "annotation-container",
-            "break-words",
-            "max-h-[80vh]",
-            "overflow-y-scroll",
-          );
-          pdfContainer.value.appendChild(annotationDiv);
-
-          // Display annotations
-          annotations.forEach((annotation) => {
-            const annotationItem = document.createElement("div");
-            annotationItem.classList.add("annotation-item", "mb-2", "text-xs");
-            annotationItem.textContent = `Annotation: ${JSON.stringify(
-              annotation,
-            )}`;
-            annotationDiv.appendChild(annotationItem);
-          });
+          allAnnotations.value.push({ pageNum: i, data: annotations });
         }
       }
     };
@@ -89,6 +87,7 @@ export default {
     return {
       pdfContainer,
       loadPDF,
+      allAnnotations,
     };
   },
 };
@@ -100,12 +99,9 @@ export default {
   overflow-y: scroll; */
 }
 
-.page-container {
-  margin-right: 20px; /* Add spacing between pages */
-}
-
 .annotation-container {
   border-top: 1px solid #ddd;
+  margin-right: 20px;
 }
 
 .annotation-item {

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="py-2">
     <input type="file" @change="loadPDF" />
-    <div ref="pdfContainer" class="pdf-container grid grid-cols-2 gap-2"></div>
+    <div ref="pdfContainer" class="pdf-container grid grid-cols-2 gap-0"></div>
   </div>
 </template>
 
@@ -36,25 +36,13 @@ export default {
           const page = await pdf.getPage(i);
           const viewport = page.getViewport({ scale: 1 });
 
-          // Create a div to contain both the PDF page and annotations
-          // const pageContainer = document.createElement("div");
-          // pageContainer.classList.add(
-          //   "page-container",
-          //   "mb-4",
-          //   "flex",
-          //   "flex-col",
-          // );
-          // pdfContainer.value.appendChild(pageContainer);
-
-          // // Display the page number
-          // const pageLabel = document.createElement("div");
-          // pageLabel.classList.add("font-bold", "mb-2");
-          // pageLabel.textContent = `Page ${i}`;
-          // pageContainer.appendChild(pageLabel);
-
           // Create a canvas for rendering the PDF page
           const pageContainer = document.createElement("div");
-          pageContainer.classList.add("border", "border-slate-500");
+          pageContainer.classList.add(
+            "border-0",
+            "border-slate-500",
+            "overflow-auto",
+          );
           const canvas = document.createElement("canvas");
           canvas.height = viewport.height;
           canvas.width = viewport.width;
@@ -75,7 +63,7 @@ export default {
 
           // Create a div for annotations
           const annotationDiv = document.createElement("div");
-          annotationDiv.classList.add("border", "border-rose-500");
+          annotationDiv.classList.add("border-0", "border-rose-500");
           annotationDiv.classList.add("annotation-container", "break-words");
           pdfContainer.value.appendChild(annotationDiv);
 
@@ -102,8 +90,8 @@ export default {
 
 <style scoped>
 .pdf-container {
-  max-height: 800px;
-  overflow-y: scroll;
+  /* max-height: 800px;
+  overflow-y: scroll; */
 }
 
 .page-container {

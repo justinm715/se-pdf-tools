@@ -1,22 +1,15 @@
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="h-screen flex flex-col flex-grow">
     <!-- Navbar -->
-    <div class="bg-blue-600 p-4 shadow-md text-white">
-      <div class="container mx-auto">
+    <div class="bg-blue-600 p-2 shadow-md text-white w-screen">
+      <div class="mx-auto">
         <h1 class="text-xl font-semibold">My Vue App</h1>
       </div>
     </div>
 
     <!-- Main Content -->
-    <div class="flex-grow container mx-auto py-8">
-      <h2 class="text-3xl font-bold mb-4">PDFUploader.vue</h2>
-      <PDFUploader />
-      <hr class="my-6" />
-      <h2 class="text-3xl font-bold mb-4">PDFViewer.vue</h2>
+    <div class="flex-grow mx-auto">
       <PDFViewer />
-      <hr class="my-6" />
-      <h2 class="text-3xl font-bold mb-4">PDFLib.vue</h2>
-      <PDFLib />
     </div>
 
     <!-- Footer -->
@@ -27,9 +20,7 @@
 </template>
 
 <script setup>
-import PDFUploader from "./components/PDFUploader.vue";
 import PDFViewer from "./components/PDFViewer.vue";
-import PDFLib from "./components/PDFLib.vue";
 </script>
 
 <style scoped>

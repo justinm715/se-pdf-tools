@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2">
+  <div class="py-2 container">
     <input type="file" @change="loadPDF" />
     <div ref="pdfContainer" class="pdf-container grid grid-cols-2 gap-0"></div>
   </div>
@@ -34,13 +34,14 @@ export default {
       if (pdf && pdfContainer.value) {
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
-          const viewport = page.getViewport({ scale: 1 });
+          const viewport = page.getViewport({ scale: 0.5 });
 
           // Create a canvas for rendering the PDF page
           const pageContainer = document.createElement("div");
           pageContainer.classList.add(
             "border-0",
             "border-slate-500",
+            "max-h-[80vh]",
             "overflow-auto",
           );
           const canvas = document.createElement("canvas");
@@ -64,7 +65,12 @@ export default {
           // Create a div for annotations
           const annotationDiv = document.createElement("div");
           annotationDiv.classList.add("border-0", "border-rose-500");
-          annotationDiv.classList.add("annotation-container", "break-words");
+          annotationDiv.classList.add(
+            "annotation-container",
+            "break-words",
+            "max-h-[80vh]",
+            "overflow-y-scroll",
+          );
           pdfContainer.value.appendChild(annotationDiv);
 
           // Display annotations

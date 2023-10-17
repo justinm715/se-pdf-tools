@@ -9,12 +9,13 @@
           :key="annotations.pageNum"
           class="annotation-container h-[80vh] overflow-y-scroll"
         >
+          <AnalyzePage :annotationData="annotations.data" />
           <div
             v-for="annotation in annotations.data"
             :key="annotation.id"
             class="annotation-item text-xs"
           >
-            Annotation: {{ annotation }}
+            {{ annotation }}
           </div>
         </div>
       </div>
@@ -25,11 +26,14 @@
 <script lang="ts">
 import { ref } from "vue";
 import * as pdfjsLib from "pdfjs-dist/build/pdf.js";
+import AnalyzePage from "./AnalyzePage.vue";
+
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   "../../node_modules/pdfjs-dist/build/pdf.worker.js";
 
 export default {
   name: "PdfViewer",
+  components: { AnalyzePage },
   setup() {
     const pdfContainer = ref<HTMLDivElement | null>(null);
 

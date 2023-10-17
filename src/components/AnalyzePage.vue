@@ -4,7 +4,7 @@
       @click="listAnnotationTypes"
       class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded shadow-sm mb-2"
     >
-      List Annotation Types
+      List Annotation Types test
     </button>
     <ul v-if="annotationTypes.length" class="mb-2">
       <li v-for="type in annotationTypes" :key="type">{{ type }}</li>

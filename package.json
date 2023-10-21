@@ -11,6 +11,7 @@
   "dependencies": {
     "@flatten-js/core": "^1.4.4",
     "autoprefixer": "^10.4.16",
+    "d3": "^7.8.5",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^3.11.174",
     "pinia": "^2.1.7",

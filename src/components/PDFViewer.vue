@@ -12,7 +12,7 @@
           <AnalyzePage
             :annotationData="annotations.data"
             :pageNumber="annotations.pageNum"
-            :pageContainer="annotations.pageContainer"
+            :annotationsCanvas="annotations.annotationsCanvas"
           />
           <div
             v-for="annotation in annotations.data"
@@ -59,8 +59,15 @@ export default {
     const renderAllPages = async (pdf: any) => {
       if (pdf && pdfContainer.value) {
         for (let i = 1; i <= pdf.numPages; i++) {
+
           const page = await pdf.getPage(i);
-          const viewport = page.getViewport({ scale: 0.5 });
+
+          const pdfToCanvasDisplayFactors = {
+            rotation: page.rotate,
+            scale: 0.5
+          }
+
+          const viewport = page.getViewport({ scale: pdfToCanvasDisplayFactors.scale });
 
           // Create a canvas for rendering the PDF page
           const pageContainer = document.createElement("div");
@@ -69,12 +76,19 @@ export default {
             "border-slate-500",
             "h-[80vh]",
             "overflow-auto",
+            "relative",
           );
           pageContainer.dataset.pageNumber = i;
           const canvas = document.createElement("canvas");
           canvas.height = viewport.height;
           canvas.width = viewport.width;
+          canvas.classList.add("absolute", "top-0", "left-0", "z-0");
           pageContainer.appendChild(canvas);
+          const annotationsCanvas = document.createElement("canvas");
+          annotationsCanvas.height = viewport.height;
+          annotationsCanvas.width = viewport.width;
+          annotationsCanvas.classList.add("absolute", "top-0", "left-0", "z-10");
+          pageContainer.appendChild(annotationsCanvas);
           const pdfPagesColumn = document.getElementById("pdfPagesColumn");
           pdfPagesColumn.appendChild(pageContainer);
 
@@ -91,7 +105,8 @@ export default {
           allAnnotations.value.push({
             pageNum: i,
             data: annotations,
-            pageContainer: pageContainer,
+            annotationsCanvas: annotationsCanvas,
+            pdfToCanvasDisplayFactors: pdfToCanvasDisplayFactors
           });
         }
       }

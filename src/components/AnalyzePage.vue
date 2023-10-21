@@ -21,7 +21,10 @@
 
 <script lang="ts">
 import { ref } from "vue";
-import { useAnnotationHighlighterStore } from "../stores/AnnotationHighlighterStore";
+import { foobar } from "../helpers/canvasHelpers.js";
+import * as d3 from "d3";
+
+// import { useAnnotationHighlighterStore } from "../stores/AnnotationHighlighterStore";
 
 import {
   Point,
@@ -44,11 +47,11 @@ export default {
       type: Array,
       required: true,
     },
-    pageNumber: {
-      type: Number,
+    pdfToCanvasDisplayFactors: {
+      type: Object,
       required: true,
     },
-    pageContainer: { required: true },
+    annotationsCanvas: { required: true },
   },
   setup(props) {
     const annotations = ref([]);
@@ -61,7 +64,64 @@ export default {
       //   "[data-page-number='" + props.pageNumber + "']",
       // );
       // pageDiv.classList.add("border-2", "border-red-200");
-      props.pageContainer.classList.add("border-2", "border-red-200");
+      // props.annotationsCanvas.classList.add("border-2", "border-red-200");
+
+      // let svg = select(props.annotationsCanvas);
+      // .append("svg")
+      // .attr("width", props.annotationsCanvas.width)
+      // .attr("height", props.annotationsCanvas.height);
+
+      // svg.selectAll("*").remove();
+
+      // // Draw a filled polygon connecting the active points, or a point if only one is present
+      // if (a.points.length === 1) {
+      //   svg
+      //     .append("circle")
+      //     .attr("cx", a.points[0].x)
+      //     .attr("cy", a.points[0].y)
+      //     .attr("r", 2.5) // Adjust the radius if needed
+      //     .attr("fill", "yellow");
+      // } else {
+      //   console.log("Highlighting polygon");
+      //   console.log(a);
+      //   svg
+      //     .append("polygon")
+      //     .attr("points", a.points.map((p) => `${p.x},${p.y}`).join(" "))
+      //     .attr("stroke", "#0f0")
+      //     .attr("fill", "yellow");
+      // }
+
+      const ctx = props.annotationsCanvas.getContext("2d");
+      let line = d3
+        .line()
+        .context(ctx)
+        .x((d) => d[0])
+        .y((d) => d[1]);
+      ctx.clearRect(
+        0,
+        0,
+        props.annotationsCanvas.width,
+        props.annotationsCanvas.height,
+      );
+
+      // Draw the polygon
+      ctx.beginPath();
+      line(
+        a.points.map((p) => {
+          return foobar(
+            p.x,
+            p.y,
+            pdfToCanvasDisplayFactors.rotation,
+            pdfToCanvasDisplayFactors.scale,
+            props.annotationsCanvas.width,
+            props.annotationsCanvas.height,
+          );
+        }),
+      );
+      ctx.closePath();
+      ctx.stroke();
+      ctx.fillStyle = "yellow";
+      ctx.fill();
     };
 
     const listAnnotations = () => {

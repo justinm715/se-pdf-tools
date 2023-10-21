@@ -9,7 +9,11 @@
           :key="annotations.pageNum"
           class="annotation-container h-[80vh] overflow-y-scroll"
         >
-          <AnalyzePage :annotationData="annotations.data" />
+          <AnalyzePage
+            :annotationData="annotations.data"
+            :pageNumber="annotations.pageNum"
+            :pageContainer="annotations.pageContainer"
+          />
           <div
             v-for="annotation in annotations.data"
             :key="annotation.id"
@@ -66,6 +70,7 @@ export default {
             "h-[80vh]",
             "overflow-auto",
           );
+          pageContainer.dataset.pageNumber = i;
           const canvas = document.createElement("canvas");
           canvas.height = viewport.height;
           canvas.width = viewport.width;
@@ -83,7 +88,11 @@ export default {
 
           // Get annotations for the page
           const annotations = await page.getAnnotations();
-          allAnnotations.value.push({ pageNum: i, data: annotations });
+          allAnnotations.value.push({
+            pageNum: i,
+            data: annotations,
+            pageContainer: pageContainer,
+          });
         }
       }
     };

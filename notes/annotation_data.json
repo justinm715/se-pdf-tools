@@ -1,0 +1,872 @@
+[
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "162R",
+    "modificationDate": "D:20231014171835-07'00'",
+    "rect": [533.9367, 537.0234, 592.2926, 751.5828],
+    "subtype": "Square",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171829-07'00'",
+    "popupRef": null,
+    "annotationType": 5
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "166R",
+    "modificationDate": "D:20231014171835-07'00'",
+    "rect": [545.3589, 544.842, 585.6989, 627.842],
+    "subtype": "Line",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "inReplyTo": "162R",
+    "replyType": "Group",
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171829-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 4pt",
+            "textAlign": "center",
+            "lineHeight": "4.60px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "#text",
+            "value": "META_SCALER"
+          },
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "1'-0\""
+          }
+        ]
+      },
+      "str": "META_SCALER1'-0\""
+    },
+    "annotationType": 4,
+    "lineCoordinates": [575.5289, 550.342, 575.5289, 622.342],
+    "lineEndings": ["None", "None"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 90,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "170R",
+    "modificationDate": "D:20231014171835-07'00'",
+    "rect": [542.3689, 546.0659, 558.3689, 747.9219],
+    "subtype": "FreeText",
+    "hasOwnCanvas": true,
+    "noRotate": false,
+    "noHTML": false,
+    "inReplyTo": "162R",
+    "replyType": "Group",
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171829-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 8pt",
+            "textAlign": "left",
+            "margin": "3px",
+            "lineHeight": "9.20px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {
+                "lineHeight": "9.20px",
+                "fontSize": "calc(7.92px * var(--scale-factor))"
+              }
+            },
+            "children": [],
+            "value": "Program configs. Movable, but do not resize or modify."
+          }
+        ]
+      },
+      "str": "Program configs. Movable, but do not resize or modify."
+    },
+    "annotationType": 3,
+    "defaultAppearanceData": {
+      "fontSize": 8,
+      "fontName": "Helv",
+      "fontColor": "255,0,0"
+    },
+    "textPosition": [10.209699999999998, 4],
+    "textContent": ["Program configs. Movable, but do not resize or modify."]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 90,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "173R",
+    "modificationDate": "D:20231014171835-07'00'",
+    "rect": [559.9282, 635.7607, 585.1282, 737.5768],
+    "subtype": "FreeText",
+    "hasOwnCanvas": true,
+    "noRotate": false,
+    "noHTML": false,
+    "inReplyTo": "162R",
+    "replyType": "Group",
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171829-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 8pt",
+            "textAlign": "left",
+            "margin": "3px",
+            "lineHeight": "9.20px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {
+                "lineHeight": "9.20px",
+                "fontSize": "calc(7.92px * var(--scale-factor))"
+              }
+            },
+            "children": [],
+            "value": "This line should be exactly 1\" on a 1\" = 1\" scale."
+          }
+        ]
+      },
+      "str": "This line should be exactly 1\" on a 1\" = 1\" scale."
+    },
+    "annotationType": 3,
+    "defaultAppearanceData": {
+      "fontSize": 8,
+      "fontName": "Helv",
+      "fontColor": "255,0,0"
+    },
+    "textPosition": [10.209699999999998, 4],
+    "textContent": ["This line should be exactly", "1\" on a 1\" = 1\" scale."]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "my dim\r1'-11 1/2\"",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "179R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1030.138, 750.2461, 1091.718, 902.7919],
+    "subtype": "Line",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 12pt",
+            "textAlign": "center",
+            "lineHeight": "13.80px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "my dim"
+          },
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "1'-11 1/2\""
+          }
+        ]
+      },
+      "str": "my dim\n1'-11 1/2\""
+    },
+    "annotationType": 4,
+    "lineCoordinates": [1070.928, 755.7461, 1070.928, 897.2919],
+    "lineEndings": ["ClosedArrow", "ClosedArrow"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "my area 1\r3.05 sf",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "183R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1074.606, 762.006, 1195.118, 971.1703],
+    "subtype": "Polygon",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 12pt",
+            "textAlign": "center",
+            "lineHeight": "13.80px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "my area 1"
+          },
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "3.05 sf"
+          }
+        ]
+      },
+      "str": "my area 1\n3.05 sf"
+    },
+    "annotationType": 7,
+    "vertices": [
+      {
+        "x": 1080.106,
+        "y": 866.9606
+      },
+      {
+        "x": 1105.436,
+        "y": 767.506
+      },
+      {
+        "x": 1179.561,
+        "y": 796.5602
+      },
+      {
+        "x": 1189.618,
+        "y": 948.5358
+      },
+      {
+        "x": 1117.728,
+        "y": 965.6703
+      }
+    ]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "187R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1059.017, 748.9689, 1248.066, 969.3079],
+    "subtype": "Line",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "annotationType": 4,
+    "lineCoordinates": [1064.517, 754.4689, 1242.566, 963.8079],
+    "lineEndings": ["None", "None"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": null,
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 90,
+    "contentsObj": {
+      "str": "My text",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "189R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1032.855, 1002.919, 1079.416, 1065.87],
+    "subtype": "FreeText",
+    "hasOwnCanvas": true,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 12pt",
+            "textAlign": "left",
+            "margin": "3px",
+            "lineHeight": "13.80px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "My text"
+          }
+        ]
+      },
+      "str": "My text"
+    },
+    "annotationType": 3,
+    "defaultAppearanceData": {
+      "fontSize": 12,
+      "fontName": "Helv",
+      "fontColor": "255,0,0"
+    },
+    "textPosition": [13.314000000000078, 4],
+    "textContent": ["My text"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "my area 2\r3.56 sf",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "192R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1107.813, 904.2969, 1271.161, 1113.461],
+    "subtype": "Polygon",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 12pt",
+            "textAlign": "center",
+            "lineHeight": "13.80px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "my area 2"
+          },
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "3.56 sf"
+          }
+        ]
+      },
+      "str": "my area 2\n3.56 sf"
+    },
+    "annotationType": 7,
+    "vertices": [
+      {
+        "x": 1113.313,
+        "y": 1009.252
+      },
+      {
+        "x": 1138.642,
+        "y": 909.7969
+      },
+      {
+        "x": 1212.767,
+        "y": 938.8511
+      },
+      {
+        "x": 1265.661,
+        "y": 1058.42
+      },
+      {
+        "x": 1150.934,
+        "y": 1107.961
+      }
+    ]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,128,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "196R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1147.669, 877.4777, 1272.278, 986.0699],
+    "subtype": "Polygon",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "annotationType": 7,
+    "vertices": [
+      {
+        "x": 1153.169,
+        "y": 939.9686
+      },
+      {
+        "x": 1193.77,
+        "y": 882.9777
+      },
+      {
+        "x": 1266.778,
+        "y": 890.8
+      },
+      {
+        "x": 1254.859,
+        "y": 958.2205
+      },
+      {
+        "x": 1188.183,
+        "y": 980.5699
+      }
+    ]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "my poly\r3'-3/4\"",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "198R",
+    "modificationDate": "D:20231014171849-07'00'",
+    "rect": [1216.326, 778.3955, 1297.235, 980.8982],
+    "subtype": "PolyLine",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171849-07'00'",
+    "popupRef": null,
+    "richText": {
+      "html": {
+        "name": "div",
+        "attributes": {
+          "style": {
+            "font": "Helvetica 8pt",
+            "textAlign": "center",
+            "lineHeight": "9.20px",
+            "color": "#FF0000"
+          },
+          "class": [],
+          "dir": "auto"
+        },
+        "children": [
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "my poly"
+          },
+          {
+            "name": "p",
+            "attributes": {
+              "style": {}
+            },
+            "children": [],
+            "value": "3'-3/4\""
+          }
+        ]
+      },
+      "str": "my poly\n3'-3/4\""
+    },
+    "annotationType": 8,
+    "vertices": [
+      {
+        "x": 1261.563,
+        "y": 783.8955
+      },
+      {
+        "x": 1223.942,
+        "y": 888.9375
+      },
+      {
+        "x": 1233.254,
+        "y": 923.9515
+      },
+      {
+        "x": 1291.735,
+        "y": 968.2778
+      }
+    ],
+    "lineEndings": ["None", "None"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "202R",
+    "modificationDate": "D:20231014171856-07'00'",
+    "rect": [4.448608, 1973.902, 1356.673, 2581.863],
+    "subtype": "Line",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171856-07'00'",
+    "popupRef": null,
+    "annotationType": 4,
+    "lineCoordinates": [9.948608, 1979.402, 1351.173, 2576.363],
+    "lineEndings": ["None", "None"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 1,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "204R",
+    "modificationDate": "D:20231014171858-07'00'",
+    "rect": [666.0159, 1891.206, 1705.546, 2571.526],
+    "subtype": "Line",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171858-07'00'",
+    "popupRef": null,
+    "annotationType": 4,
+    "lineCoordinates": [671.5159, 1896.706, 1700.046, 2566.026],
+    "lineEndings": ["None", "None"]
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "206R",
+    "modificationDate": "D:20231014171903-07'00'",
+    "rect": [1642.693, 17.45865, 1721.22, 126.997],
+    "subtype": "Circle",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171903-07'00'",
+    "popupRef": null,
+    "annotationType": 6
+  },
+  {
+    "annotationFlags": 4,
+    "borderStyle": {
+      "width": 0,
+      "style": 1,
+      "dashArray": [3],
+      "horizontalCornerRadius": 0,
+      "verticalCornerRadius": 0
+    },
+    "color": "255,0,0",
+    "backgroundColor": null,
+    "borderColor": null,
+    "rotation": 0,
+    "contentsObj": {
+      "str": "",
+      "dir": "ltr"
+    },
+    "hasAppearance": true,
+    "id": "208R",
+    "modificationDate": "D:20231014171904-07'00'",
+    "rect": [14.61719, 20.0429, 90.5603, 114.0758],
+    "subtype": "Circle",
+    "hasOwnCanvas": false,
+    "noRotate": false,
+    "noHTML": false,
+    "titleObj": {
+      "str": "justin",
+      "dir": "ltr"
+    },
+    "creationDate": "D:20231014171904-07'00'",
+    "popupRef": null,
+    "annotationType": 6
+  }
+]
